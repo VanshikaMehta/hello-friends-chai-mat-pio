@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 12px;
+}
+
+.img-area {
+  background-image: url(svit.jpeg);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  filter: blur(12px);
+}
+
+.container {
+  background-color: whitesmoke;
+  /*border: 5px solid rgb(62, 0, 90);
+    /* color: rgb(25, 0, 255); */
+  position: absolute;
+  top: 10%;
+  left: 24%;
+  width: 60vw;
+}
+
+.title-wrapper {
+  margin-bottom: 25px;
+  margin: 5vh 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.container h2 {
+  font-size: 2.5rem;
+  display: inline;
+  /* align-self: center; */
+  /* padding: 24px 356px 23px; */
+}
+
+.box {
+  margin: 2vh 3vw;
+  /* width: 100%; */
+  /* border-bottom: 3px solid rgb(2, 46, 8); */
+  border: 2px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.box input {
+  width: 100%;
+  font-size: 20px;
+  /* margin: 11px 63px 9px; */
+  padding: 10px 30px 10px 46px;
+  border: none;
+  color: rgb(68, 18, 18);
+  display: inline-flex;
+}
+
+.box textarea {
+  width: 100%;
+  font-size: 20px;
+  /* margin: 9px 63px 9px; */
+  padding: 10px 30px 10px 46px;
+  border: none;
+  color: rgb(68, 18, 18);
+  display: inline-flex;
+}
+
+.box select {
+  width: 100%;
+  font-size: 20px;
+  /* margin: 9px 63px 9px; */
+  padding: 10px 30px 10px 46px;
+  border: none;
+  color: rgb(68, 18, 18);
+  display: inline-flex;
+}
+
+.box i {
+  width: 25px;
+  margin: 4px 16px;
+  padding: 9px 0px 9px;
+  display: block;
+  /* position: absolute;
+    left: 62px;
+    top: 133px; */
+  /* float: left; */
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.date-box {
+  display: none;
+}
+
+.radio-button-group {
+  /* width: 87.5%; */
+  /* border: 2px solid; */
+  /* margin: 3px 63px 3px; */
+
+  margin: 2vh 3vw;
+  /* width: 100%; */
+  /* border-bottom: 3px solid rgb(2, 46, 8); */
+  border: 2px solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.radio-button-group i {
+  width: 25px;
+  margin: 4px 16px;
+  padding: 9px 0px 9px;
+  display: block;
+  /* position: absolute;
+      left: 62px;
+      top: 133px; */
+  /* float: left; */
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.radio-label {
+  /* padding: 0 12px; */
+  /* background-color: #db6161; */
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  display: flex;
+  flex: auto;
+}
+
+.radio-label p {
+  font-size: 1.2rem;
+  /* font-weight: bold; */
+  text-align: center;
+}
+
+.radio {
+  display: flex;
+  flex: auto;
+  padding: 0 1vw;
+  align-self: center;
+}
+
+.radio-radio {
+  width: 20px;
+}
+
+.btn1 {
+  font-size: 20px;
+  color: rgb(2, 46, 8);
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  width: 25%;
+  margin: 19px 64px;
+  padding: 11px;
+  border-radius: 25px;
+  border: 2px solid rgb(2, 46, 8);
+}
+
+.btn1:hover {
+  /* opacity: 0.5; */
+  background: blue;
+  color: white;
+}
+
+.btn2 {
+  font-size: 20px;
+  color: rgb(2, 46, 8);
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  width: 25%;
+  margin: 17px 63px;
+  padding: 11px;
+  border-radius: 25px;
+  border: 2px solid rgb(2, 46, 8);
+}
+
+.btn2:hover {
+  /* opacity: 0.5; */
+  background: blue;
+  color: white;
+}
+
+.box16 p {
+  width: 25px;
+  font-size: 1.3rem;
+  font-family: system-ui;
+  margin: 9px 8px 5px;
+  padding: 0px 33px 9px;
+  position: absolute;
+  /* font-weight: bold; */
+  /* left: 61px; */
+  /* top: 1018px; */
+  /* float: left; */
+  text-align: center;
+}
+
+.box16 span {
+  /* width: 25px; */
+  font-size: 1.3rem;
+  font-family: system-ui;
+  margin: 100px 190px 100px;
+  padding: 11px 36px 9px;
+  /* position: absolute; */
+  /* font-weight: bold; */
+  /* left: 61px; */
+  /* top: 1014px; */
+  /* float: left; */
+  text-align: center;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/54bf038253.js" crossorigin="anonymous"></script>
+    <title>Admission Inquiry Form for Admission in FY BE</title>
+    <link rel="stylesheet" href="cms.css">
+</head>
+
+<body>
+    <div class="img-area"></div>
+    <form action="backend.php">
+        <div class="container">
+            <div class="title-wrapper">
+                <h2>INQUIRY FORM</h2>
+            </div>
+            <div class="box">
+
+                <i class="fas fa-user"></i>
+                <input type="text" name="myName" id="name" placeholder=" Enter your name" required>
+
+            </div>
+
+            <div class="box date-box">
+
+                <i class="far fa-calendar"></i>
+                <input type="datetime-local" name="myDate" id="date" required>
+
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-phone"></i>
+                <input type="tel" name="myNumber" id="mobile_number" placeholder="Mobile number" required>
+
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-phone"></i>
+                <input type="tel" name="myNumber1" id="mobile_number1" placeholder="Alternate mobile number" required>
+
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="myEmail" id="email" placeholder="E-mail I'd" required>
+
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-home"></i>
+                <textarea name="myAddress" id="address" cols="20" rows="5" placeholder="Residential address" required></textarea>
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-city"></i>
+                <input type="text" name="myCity" id="city" placeholder="City" required>
+
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-city"></i>
+                <input type="text" name="myState" id="state" placeholder="State" required>
+
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-calendar-week"></i>
+                <select name="passingyear_12" id="passingyear">
+                        <option value=" Select Passing year of 12th">Select Passing year of 12th</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select>
+
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-chalkboard-teacher"></i>
+                <select name="myBoard" id="examboard" required>
+                        <option value="Select your Board"> Select your Board </option>
+                        <option value="Gujarat Higher Secondary Education Board"> Gujarat Higher Secondary Education
+                            Board </option>
+                        <option value="Central Board of Secondary Education"> Central Board of Secondary Education
+                        </option>
+                        <option value="Indian Certificate of Secondary Education"> Indian Certificate of Secondary
+                            Education </option>
+                        <option value="other"> other <input type="text" placeholder="Other"> </option>
+                    </select>
+
+            </div>
+
+            <div class="box">
+                <i class="fas fa-university"></i>
+                <input type="text" placeholder="Enter your previous institute" name="institute" id="institute">
+            </div>
+
+            <div class="box">
+                <i class="fas fa-poll"></i>
+                <input type="text" placeholder="Enter your previous result" name="myMarks" id="marks">
+            </div>
+
+            <div class="box">
+                <i class="fas fa-sign-in-alt"></i>
+                <select name="myCategory" id="category">
+                        <option value="Admission Category">Admission Category </option>
+                        <option value="Scheduled Caste(SC)"> Scheduled Caste(SC) </option>
+                        <option value="Scheduled Tribes(ST)"> Scheduled Tribes(ST) </option>
+                        <option value="Socially And Economically Backward Classes(SEBC)"> Socially And Economically
+                            Backward Classes(SEBC) </option>
+                        <option value="Economically Weaker Sections(EWS)">Economically Weaker Sections (EWS) </option>
+                        <option value="Open(General)"> Open(General) </option>
+                        <option value="Tuition Fee Waiver Scheme(TFWS)"> Tuition Fee Waiver Scheme(TFWS)</option>
+                    </select>
+            </div>
+
+
+            <div class="box">
+
+                <i class="fas fa-user-graduate"></i>
+                <select name="myCourse" id="course" onchange="populate(this.id,'branch')" required>
+                    <option value="Select Course"> Select Course </option>
+                    <option value="Diploma_to_Degree"> Diploma_to_Degree(D2D) </option>
+                    <option value="Masters_in_Engineering"> Masters_in_Engineering(ME) </option>
+                    <option value="Bachelors_in_Engineering"> Bachelors_in_Engineering(BE) </option>
+                    
+                </select>
+
+            </div>
+
+            <div class="box" id="previous_branch_container">
+                <i class="fas fa-user-graduate"></i>
+                <input type="text" name="previous_branch" id="previous_branch" placeholder="Previous branch">
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-user-graduate"></i>
+                <select name="myBranch" id="branch" required>
+                        <!-- <option value="Engineering Branch"> Engineering Branch </option>
+                    <option value="Computer Engineering"> Computer Engineering </option>
+                    <option value="Information and Technology"> Information and Technology </option>
+                    <option value="Mechanical Engineering"> Mechanical Engineering </option>
+                    <option value="Electrical Engineering"> Electrical Engineering </option>
+                    <option value="Civil Engineering"> Civil Engineering </option>
+                    <option value="Aeronautical Engineering"> Aeronautical Engineering </option>
+                    <option value="Electronic and Communications Engineering"> Electronic and Communications
+                        Engineering
+                    </option>
+                    <option value="Instrumentation and Control Engineering"> Instrumentation and Control Engineering
+                    </option> -->
+                    </select>
+
+            </div>
+
+            <div class="radio-button-group">
+                <i class="fas fa-handshake" aria-hidden="true"></i>
+                <div class="radio-label">
+                    <p>Do you need Counseling?</p>
+                </div>
+
+                <div class="radio">
+                    <input type="radio" class="radio-radio" name="counselling" id="counselling_yes" value="yes">
+                    <label for="counselling_yes">Yes</label>
+                </div>
+                <div class="radio">
+                    <input type="radio" class="radio-radio" name="counselling" id="no" value="no">
+                    <label for="counselling_yes">No</label>
+                </div>
+            </div>
+
+            <div class="box">
+
+                <i class="fas fa-comments"></i>
+                <textarea name="myComment" id="feedback" cols="30" rows="10" placeholder="Comments"></textarea>
+
+            </div>
+
+            <div>
+
+                <input type="submit" value="Submit" class="btn1">
+
+                <input type="reset" value="Reset" class="btn2">
+
+            </div>
+        </div>
+    </form>
+
+    <script src="cms.js"></script>
+
+</body>
+
+</html>
